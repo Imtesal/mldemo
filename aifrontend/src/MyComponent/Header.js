@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import logo from '../images/logo.jpg';
+import amit from '../images/amit.png';
 
+import {  Avatar } from '@mui/material';
 
 export default function Header(props) {
   return (
@@ -27,6 +29,9 @@ export default function Header(props) {
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button className="btn btn-outline-success" type="submit">Search</button>
             </form>
+            
+          <Avatar alt="Remy Sharp" src={amit} />
+
           </div>
         </div>
       </nav>

@@ -23,11 +23,18 @@ function SentimentAnalysis(props) {
     handleClose();
   }
   const [open, setOpen] = useState(false);
+  let root = document.getElementById('root');
   const handleClose = () => {
     setOpen(false);
+    root.classList.remove('rootStyle');
   };
   const handleToggle = () => {
     setOpen(!open);
+    if(open){
+      root.classList.remove('rootStyle');
+    }else{
+      root.classList.add('rootStyle');
+    }
   };
 
   return (

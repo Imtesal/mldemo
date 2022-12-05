@@ -53,10 +53,12 @@ function SentimentAnalysis(props) {
           <br></br>
           
          <ul class="list-group">
-  
   {
       sentiment.map((d) => (
-        <li class="list-group-item">{d.s}&nbsp;&nbsp;&nbsp;&nbsp;{d.sentiment}</li>
+        <li class="list-group-item">
+           <div className='string'>{d.s}</div>
+          <div className='rating'>{d.sentiment}</div>
+        </li>
         
       ))
     }

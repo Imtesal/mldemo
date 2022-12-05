@@ -1,0 +1,366 @@
+.duplicate{
+  padding:0px 30px 30px 15px;
+}
+
+.duplicate h1{
+  font-size: 24px;
+ text-align: left;
+ padding: 10px;
+ margin-bottom: 30px;
+}
+
+.duplicateHeading{
+  font-size: 26px;
+  text-align: left;
+  padding:0px 15px 30px 0px;
+  color: #313e5b;
+}
+
+.duplicateHeading .button svg{
+  color: #ff4800;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.duplicateBox{
+  display: flex;
+  justify-content: space-between;
+  padding:0px 15px 30px 0px;
+
+}
+
+.duplicateBox .left .content{
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  padding-top: 60px;
+}
+
+.duplicateBox .left .content .header{
+  position: absolute;
+  top: 25px;
+}
+
+.duplicateBox .left .content .header button{
+  padding: 0px 15px;
+  min-width: 70px;
+  height: 54px;
+  background-color: #ff4800;
+ border: 1px solid #ff4800;
+ color: #fff;
+ margin-right: 10px;
+ border-radius: 5px;
+ font-size: 14px;
+ font-weight: 400;
+}
+
+.duplicateBox .right{
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.duplicateBox .left .content .leftContent{
+  width: 100%;
+}
+
+.duplicateBox .left .content h5{
+ text-align: left;
+ margin-top: 30px;
+ margin-bottom: 15px;
+ font-size: 16px;
+}
+
+.duplicateBox .left .content .input{
+  height: 44px;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 14px;
+  box-shadow: 0px 2px 7px rgb(0 0 0 / 20%);
+  outline: none;
+  margin-bottom: 15px;
+  width: calc(100%);
+}
+
+.duplicateBox .left .content .rightContent{
+  width: 100%;
+  padding-left: 30px;
+}
+
+.duplicateBox .left .content .rightContent .header{
+ display: flex;
+ align-items: center;
+ 
+}
+
+.duplicateBox .left .content .rightContent button{
+  max-width: 200px;
+  min-width: 70px;
+  height: 54px;
+  background-color: #ff4800;
+ border: 1px solid #ff4800;
+ color: #fff;
+ margin-right: 10px;
+ border-radius: 5px;
+ font-size: 14px;
+ font-weight: 400;
+}
+
+.duplicateBox .left .content .rightContent button:last-child{
+  margin-right: 0px;
+}
+.duplicateBox .left .content .rightContent .bottom{
+  text-align: right;
+}
+
+
+.duplicateBox .left .content .leftContent .header{
+  display: flex;
+  align-items: center;
+}
+.duplicateBox .left .content .leftContent .selectBox{
+  border-right: 1px solid #ccc;
+ padding-right: 30px;
+
+}
+
+.duplicateBox .right{
+  padding-left: 30px;
+}
+
+.duplicateBox .right h5{
+  text-align: left;
+  font-size: 18px;
+}
+
+
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* file wrapper */
+
+
+.file-upload-wrapper {
+  position: relative;
+  width: 370px;
+  height: 60px;
+  box-shadow: 0px 2px 7px rgb(0 0 0 / 20%);
+  border-radius: 5px;
+}
+.file-upload-wrapper:after {
+  content: attr(data-text);
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 10px 15px;
+  display: block;
+  width: calc(100% - 70px);
+  pointer-events: none;
+  z-index: 20;
+  height: 60px;
+  line-height: 40px;
+  color: #333;
+  border-radius: 5px 10px 10px 5px;
+  font-weight: 500;
+}
+.file-upload-wrapper:before {
+  content: "Upload";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  height: 60px;
+  background: #ff4800;
+  color: #fff;
+  font-weight: 600;
+  z-index: 25;
+  font-size: 12px;
+  line-height: 60px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  pointer-events: none;
+  border-radius: 0 5px 5px 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.file-upload-wrapper:hover:before {
+  background: #ff4800;
+  transform: scale(1.1);
+}
+.file-upload-wrapper input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+/* select option */
+
+.selectBox {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  display: flex;
+  flex-flow: column;
+}
+
+.selectBox select {
+  /* background-color: #0563af; */
+  /* color: ; */
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 14px;
+  box-shadow: 0px 2px 7px rgba(0 0 0 / 20%);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  margin-bottom: 15px;
+  width: calc(100%);
+}
+
+/* .selectBox::before {
+  content: "\f13a";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+} */
+
+.selectBox:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.selectBox select option {
+  padding: 30px;
+}
+
+
+
+/* Table start */
+
+
+.rwd-table {
+  margin: auto;
+  min-width: 300px;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.rwd-table tr:first-child {
+  border-top: none;
+  background: #ff4800;
+  color: #fff;
+}
+
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f9fc;
+}
+
+.rwd-table tr:nth-child(odd):not(:first-child) {
+  background-color: #ebf3f9;
+}
+
+.rwd-table th {
+  display: none;
+}
+
+.rwd-table td {
+  display: block;
+}
+
+.rwd-table td:first-child {
+  margin-top: .5em;
+}
+
+.rwd-table td:last-child {
+  margin-bottom: .5em;
+}
+
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 120px;
+  display: inline-block;
+  color: #000;
+}
+
+.rwd-table th,
+.rwd-table td {
+  text-align: left;
+}
+
+.rwd-table {
+  color: #333;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.rwd-table tr {
+  border-color: #bfbfbf;
+}
+
+.rwd-table th,
+.rwd-table td {
+  padding: .5em 1em;
+}
+@media screen and (max-width: 601px) {
+  .rwd-table tr:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .rwd-table tr:hover:not(:first-child) {
+    background-color: #d8e7f3;
+  }
+  .rwd-table td:before {
+    display: none;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child,
+  .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child,
+  .rwd-table td:last-child {
+    padding-right: 0;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    padding: 1em !important;
+  }
+}
+

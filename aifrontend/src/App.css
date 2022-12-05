@@ -116,9 +116,9 @@ nav{
   float: left;
   display: inline-block;
   width: 300px;
-  height: 100px;
+  height: 60px;
   text-align: center;
-  line-height: 25vh;
+  /* line-height: 25vh; */
   margin: 0;
   color: #313e5b;
   border-radius: 5px;
@@ -131,27 +131,28 @@ nav{
 
 .tabs-v > label + span{
   background: linear-gradient(to left bottom,#dee4f3,#e7eaf6,#f0f1f9,#f8f8fc,#fff);
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   display: flex;
   position: absolute;
-  top: 85px;
+  top: 43px;
   left: 32px;
   border-radius: 5px;
+  pointer-events: none;
 }
 
 .tabs-v > label + span:nth-child(7){
-  top: 200px;
+  top: 117px;
   left: 30px;
 }
 
 .tabs-v > label + span:nth-child(11){
-  top: 315px;
+  top: 193px;
   left: 30px;
 }
 
 .tabs-v > label + span:nth-child(15){
-  top: 430px;
+  top: 268px;
   left: 30px;
 }
 
@@ -427,7 +428,7 @@ nav{
   height: 100%;
   overflow: hidden;
   background: #fff;
-  padding:60px 0px 15px 15px;
+  padding:30px 0px 15px 15px;
   background-color: #f2f6f9;
 }
 
@@ -604,10 +605,11 @@ section {
 .faHouse, .faHouse2, .faHouse3, .faHouse4{
   color: #ff4800;
   position: absolute;
-  left: 40px;
-  top: 95px;
-  font-size: 26px;
+  left: 38px;
+  top: 50px;
+  font-size: 21px;
   z-index: 99;
+  pointer-events: none;
 }
 
 .tab-v input::after{
@@ -619,15 +621,15 @@ section {
 }
 
 .faHouse2{
- top: 210px !important;
+ top: 123px !important;
 }
 
 .faHouse3{
- top: 325px !important;
+ top: 200px !important;
 }
 
 .faHouse4{
-  top: 440px !important;
+  top: 275px !important;
 }
 
 .tabs-v > input[type="radio"]:checked + label + svg{
@@ -668,6 +670,7 @@ section {
   border-radius: 5px;
   margin-top: 30px;
   margin-bottom: 15px;
+  min-height: 90px;
 }
 
 
@@ -680,20 +683,30 @@ section {
 .sentimentAnalysis textarea{
   display: flex;
   width: 100%;
-  border: 1px solid #313e5b;
-  border-radius: 10px;
+  border: 1px solid #ff4800;
+  border-radius: 5px;
   height: 100px;
   margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.sentimentAnalysis textarea:focus-visible{
+  border: 2px solid #ff4800;
+  outline: 1px;
 }
 
 .sentimentAnalysis button{
-  background-color: #313e5b;
+  background-color: #ff4800;
   border: none;
   color: #fff;
   border-radius: 5px;
   line-height: 40px;
   padding: 5px 15px;
   cursor: pointer;
+}
+
+.sentimentAnalysis button:hover{
+  background-color: #ff4800;
 }
   
 .urlInput{
@@ -722,8 +735,40 @@ section {
   border: 1px solid #313e5b;
   border-radius: 5px;
   width: 100%;
+  padding-left: 40px;
 }
 
 .sentimentAnalysis h1{
   margin-bottom: 30px;
+}
+
+.rootStyle{
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.rootStyle .MuiCircularProgress-root{
+  margin-left: -170px;
+  margin-top: -150px;
+}
+
+.rootStyle .navbar, .rootStyle .banner{
+  display: none;
+}
+
+.rootStyle .css-1ji7omv-MuiBackdrop-root{
+  background-color: transparent;
+}
+
+.rootStyle:after{
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.5);
+  z-index: 999999;
 }

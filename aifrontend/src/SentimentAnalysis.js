@@ -1,5 +1,5 @@
 import './duplicate.css';
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 
 import {  Backdrop, Button,CircularProgress } from '@mui/material';
 
@@ -34,8 +34,8 @@ function SentimentAnalysis(props) {
     <>
       <div className="sentimentAnalysis">
          <h1>Sentiment Analysis</h1>
-         <p>Analyze the data in terms of sentiment including social media, questionnaires, customer review and even voice.</p>
-         <div>Enter text here </div>
+         <p>Analyze the sentiment of your customer using data from social media, questionnaires, customer review and even voice.</p>
+         <div>Enter text data here </div>
          <textarea value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}></textarea>
          <Button onClick={()=> sentimentAnalysisPost(searchTerm)}>Analyze</Button>
         <Backdrop  sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }} open={open} onClick={handleClose} >

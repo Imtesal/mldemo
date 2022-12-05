@@ -1,18 +1,48 @@
 import './duplicate.css';
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
+import {  Backdrop, Button,CircularProgress } from '@mui/material';
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+
+
+const API_URL='http://localhost:1200'
+
 function WebScrapping(props) {
+  const [urlText, setUrlText] = useState("");
+  const [article, setArticle] = useState([]);
+
+  //url ='https://mcpress.mayoclinic.org/emotional-health/building-self-esteem-is-an-important-part-of-self-care/'
+  const webScrappingPost = async() =>{
+    setArticle([]);
+    const response = await fetch(`${API_URL}/webscrapper`, {
+      method: "POST",
+      body: JSON.stringify({
+      url: urlText
+      })
+    });
+    const data = await response.json()
+    setArticle(data.results)
+  }
   return (
       <div className="textSummarization sentimentAnalysis">
          <h1>Web Scrapping</h1>
          <div>Enter text URL</div>
          <div className='urlInput'>
           <label>https://example.com/article/</label>
-          <input />
+          <input onChange={(e) => setUrlText(e.target.value)} value={urlText} />
          </div>
-         <button>Analyze</button>
+         <Button onClick={()=> webScrappingPost(urlText)}>Analyze</Button>
+         {
+            article?.length > 0 ? (
+              <p className="text-medium-emphasis">
+              {
+                  article[0].text
+              }
+              </p>
+            ):(
+                <p className="text-medium-emphasis"></p>
+            )
+            
+        }
       </div>
   );
 }

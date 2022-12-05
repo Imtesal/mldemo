@@ -23,15 +23,16 @@ nav{
 
 .banner img{
   width: 100%;
-  max-height: 300px;
+  max-height: 700px;
   border-radius: 5px;
 }
 
 .navbar{
   background-color: transparent !important;
   margin-bottom: 0px !important;
+  padding-top: 0px !important;
   padding-bottom: 0px !important;
-  border-bottom: 1px solid #ccc;
+  box-shadow: 1px 1px 5px #ccc;
 }
 
 .navbar-brand img{
@@ -46,7 +47,7 @@ nav{
   width: 200px;
   width: 500px;
   border-radius: 100px;
-  border: 1px solid #ff4800;
+  /* border: 1px solid #ff4800; */
 }
 
 #navbarSupportedContent button {
@@ -670,7 +671,6 @@ section {
   border-radius: 5px;
   margin-top: 30px;
   margin-bottom: 15px;
-  min-height: 90px;
 }
 
 
@@ -771,4 +771,21 @@ section {
   width: 100%;
   background-color:rgba(0, 0, 0, 0.5);
   z-index: 999999;
+}
+
+.list-group-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px !important;
+  padding-bottom: 0px;
+}
+
+.list-group-item .rating{
+  background-color: #ff4800;
+  color: #fff;
+  border-radius: 100px;
+  padding: 0px 25px;
+  line-height: 33px;
+  height: 35px;
 }

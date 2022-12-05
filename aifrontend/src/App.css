@@ -46,7 +46,7 @@ nav{
 #navbarSupportedContent input {
   width: 200px;
   width: 500px;
-  border-radius: 0px;
+  border-radius: 3px;
   /* border: 1px solid #ff4800; */
 }
 
@@ -54,7 +54,7 @@ nav{
   background-color: #ff4800;
   color: #fff;
   border: none;
-  border-radius: 0px;
+  border-radius: 3px;
 }
 
 

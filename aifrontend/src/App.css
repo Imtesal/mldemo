@@ -878,8 +878,8 @@ section {
 }
 
 .rootStyle .MuiCircularProgress-root{
-  margin-left: -170px;
-  margin-top: -150px;
+  /* margin-left: -170px;
+  margin-top: -150px; */
 }
 
 .rootStyle .navbar, .rootStyle .banner{
@@ -899,4 +899,41 @@ section {
   width: 100%;
   background-color:rgba(0, 0, 0, 0.5);
   z-index: 999999;
+}
+
+.list-group{
+  border-radius: 5px;
+}
+
+.list-group-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0px;
+}
+
+
+.list-group-item .rating, .list-group-item .rating2, .list-group-item .rating3, .list-group-item .rating4, .list-group-item .rating5{
+  background-color: #57e32c;
+  color: #fff;
+  border-radius: 100px;
+  padding: 5px 15px;
+  min-width: 115px;
+  text-align: center;
+}
+
+.list-group-item .rating2{
+  background-color: #b7dd29;
+}
+
+.list-group-item .rating3{
+  background-color: #ffe234;
+}
+
+.list-group-item .rating4{
+  background-color: #ffa534;
+}
+
+.list-group-item .rating5{
+  background-color: #ff4545;
 }

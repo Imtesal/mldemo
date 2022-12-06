@@ -181,7 +181,6 @@ function Home() {
           <div className="tab-c">{renderHomeContent()}</div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

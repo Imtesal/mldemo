@@ -54,7 +54,7 @@ function Home() {
         onDemoClick={() => demoHandler("auto")}
         link="/duplicate"
         title="Matching & Pinning"
-        description="Find duplicate or similar records"
+        description="PoC to address the duplicate records problem (address, name etc.) through machine learning in their Matching & Pinning Process"
       />
       <Card
         icon={faChartGantt}

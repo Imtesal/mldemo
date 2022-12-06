@@ -14,6 +14,7 @@ import {
   faChartPie,
   faGlobe,
   faEquals,
+  faRobot,
 } from "@fortawesome/free-solid-svg-icons";
 import SentimentAnalysis from "./SentimentAnalysis";
 import TextSummarization from "./TextSummarization";
@@ -48,6 +49,13 @@ function Home() {
 
   const renderHomeCards = () => (
     <>
+     <Card
+        icon={faEquals}
+        onDemoClick={() => demoHandler("auto")}
+        link="/duplicate"
+        title="Matching & Pinning"
+        description="Find duplicate or similar records"
+      />
       <Card
         icon={faChartGantt}
         onDemoClick={() => demoHandler("sentiment")}
@@ -69,13 +77,7 @@ function Home() {
         title="Web Scrapping"
         description="Scrape data from any website at scale and accuracy using best in class open source technology"
       />
-      <Card
-        icon={faEquals}
-        onDemoClick={() => demoHandler("auto")}
-        link="/duplicate"
-        title="Matching & Pinning"
-        description="Find duplicate or similar records"
-      />
+     
     </>
   );
 
@@ -158,7 +160,21 @@ function Home() {
           ></label>
           <span></span>
           <FontAwesomeIcon icon={faShuffle} className="faHouse4" />
+          <input
+            id="rad5"
+            name="rad"
+            type="radio"
+            checked={menuOption === "IOT"}
+          />
+          <label
+            data-text="IOT"
+            for="rad5"
+            onClick={() => menuClick("IOT")}
+          ></label>
+          <span></span>
+          <FontAwesomeIcon icon={faRobot} className="faHouse5" />
           
+          <div className="tab-c">{renderHomeContent()}</div>
           <div className="tab-c">{renderHomeContent()}</div>
           <div className="tab-c">{renderHomeContent()}</div>
           <div className="tab-c">{renderHomeContent()}</div>

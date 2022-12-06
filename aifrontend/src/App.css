@@ -794,11 +794,12 @@ section {
 .sentimentAnalysis p{ 
   background-color: #fff;
   padding: 15px 30px;
-  border-left: 2px solid #ff4800;
   border-radius: 5px;
   margin-top: 30px;
   margin-bottom: 15px;
-  min-height: 90px;
+  max-height: 400px;
+  overflow: auto;
+
 }
 
 

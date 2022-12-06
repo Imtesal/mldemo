@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Card from "./Card";
 import Header from "./MyComponent/Header";
-import { Footer } from "./MyComponent/Footer";
 import banner from "./images/banner.jpg";
 import Duplicate from "./Duplicate";
 
